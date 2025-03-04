@@ -1,5 +1,4 @@
 #include "minimizer.h"
-#include <stdio.h>
 
 struct out_buffer {
 	char *buf;
@@ -116,6 +115,5 @@ int minimizer_minimze_css(struct css_source *src, char *out) {
 
 		buf_write_byte(&buf, fetch_current(src));
 	}
-	fprintf(stderr, "%s", out);
 	return 0;
 }

@@ -76,6 +76,7 @@ int main(int argc, char **argv) {
 	src.cursor = buf;
 	src.end = buf + size;
 	minimizer_minimze_css(&src, out);
+	printf("%s", out);
 error_out:
 	free(out);
 error_buf:
